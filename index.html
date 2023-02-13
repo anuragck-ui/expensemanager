@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Expense Manager</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  </head>
+  <body>
+    <div id="content">
+      <div id="head">
+        <div id="title">
+          <h2>Expense Manager</h2>
+        </div>
+        <div id="login">
+          <h6>Sign in</h6>
+        </div>
+      </div>
+      <div id="main">
+        <div id="balance">
+          <h3 id="bal">BALANCE</h3>
+          <h3 id="balam">0.00</h3>
+        </div>
+        <div id="expinc">
+          <div id="income">
+            <h3 id="inc">INCOME</h3>
+            <h1 id="incam">0.00</h1>
+          </div>
+          <div id="expense">
+            <h3 id="exp">EXPENSE</h3>
+            <h1 id="expam">0.00</h1>
+          </div>
+        </div>
+        <div id="history">
+          <div id="historyname">History</div>
+          <div id="historylist">
+            <div class="listind">
+              <div class="historynm"></div>
+              <div class="historyamount"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer">
+        <div id="trans">Transactions</div>
+        <select id="ty" class="trs">
+          <option value="expense"  selected="selected">Expense</option>
+          <option value="income" selet="selected">Income</option>
+        </select>
+        <input id="inp" class="trs" type="text" placeholder="Category"/>
+       <input id="aminp" class="trs" type="number" placeholder="amount"/>
+        <button id="submitbt">submit</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
